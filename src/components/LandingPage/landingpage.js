@@ -14,7 +14,7 @@ class LandingPage extends Component{
                     <Cell col={12}>
                         <img src={avatar} alt="Avatar" className="avatar-img"/>
                         <div className="banner-text">
-                            <h1>Full Stack Web Developer</h1>
+                            <h1>Software Engineer with incredible passion on Machine Learning</h1>
                             <hr/>
 
                             <p>HTML/CSS/JavaScript | ReactJS/Redux/Hooks | Android | Python | Neuron Network-Deep Learning</p>
