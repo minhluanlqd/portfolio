@@ -86,6 +86,7 @@
   border: 2px solid #BDCEDC;
   box-shadow: 5px 10px #888888;
   margin-bottom: 20px;
+  border-radius: 50px;
 }
 
 .contact-grid h2{
@@ -102,4 +103,9 @@
   border-top: 5px dotted black;
   width: 50%;
   margin: auto;
+}
+
+.contact-list i{
+  font-size: 60px;
+  padding-right: 5rem;
 }
