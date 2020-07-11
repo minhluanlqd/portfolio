@@ -38,7 +38,7 @@
 
 .banner-text hr{
    border-top: 5px dotted white;
-   widows: 50%;
+   width: 50%;
    margin: auto;
 }
 
@@ -63,4 +63,43 @@
 
 .projects-grid {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-body {
+  margin: auto;
+  background: #BDCEDC;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.contact-grid{
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: 550px;
+  background: white;
+  color: black;
+  border: 2px solid #BDCEDC;
+  box-shadow: 5px 10px #888888;
+  margin-bottom: 20px;
+}
+
+.contact-grid h2{
+  /* font-family: 'Anton', sans-serif; */
+  font-family: 'Modak', cursive;
+}
+
+.contact-grid p{
+  font-family: 'Anton', sans-serif;
+  /* font-weight: bold; */
+}
+
+.contact-grid hr{
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
 }
