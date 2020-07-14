@@ -35,7 +35,7 @@ class Contact extends Component{
                                     <ListItemContent style={{fontSize: "30px", fontFamily: "Anton"}}>
                                         <i className="fa fa-linkedin-square" aria-hidden="true"/>
                                         <a href="https://www.linkedin.com/in/luanminhtran/" rel="noopener noreferrer" target="_blank" style={{color: "black", textDecoration: "none"}}>
-                                            LinkedIn
+                                            Luan Tran
                                         </a>
                                     </ListItemContent>
                                 </ListItem>
