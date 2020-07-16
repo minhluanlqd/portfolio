@@ -3,7 +3,7 @@ import {Grid, Cell} from 'react-mdl';
 import avatar from '../../assets/images/MyAvatar.png';
 import {Icon} from '@iconify/react';
 import leetcodeIcon from '@iconify/icons-simple-icons/leetcode';
-
+import Typical from 'react-typical';
 
 class LandingPage extends Component{
 
@@ -12,11 +12,19 @@ class LandingPage extends Component{
             <div style={{margin: 'auto', width: '100%'}}>
                 <Grid className="landing-grid">
                     <Cell col={12}>
-                        <img src={avatar} alt="Avatar" className="avatar-img"/>
-                        <div className="banner-text">
-                            <h1>Software Engineer with incredible passion on Machine Learning</h1>
+                        <img src={avatar} alt="Avatar" className="avatar-img" style={{borderRadius: "100%"}}/>
+                        <div className="banner-text"> 
+                            <h1>Hi. I'm {' '}
+                            {/* <h1>Software Engineer with incredible passion on Machine Learning</h1> */}
+                            <Typical 
+                                loop={Infinity}
+                                wrapper="b"
+                                steps={[
+                                    'Luan Tran',2000,
+                                    'Software Engineer with incredible passion on Machine Learning', 2000,
+                                ]}/>
+                            </h1>
                             <hr/>
-
                             <p>HTML/CSS/JavaScript | ReactJS/Redux/Hooks | Android | Python | Neuron Network-Deep Learning</p>
 
                             <div className="social-links">

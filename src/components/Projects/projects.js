@@ -26,8 +26,8 @@ class Projects extends Component{
                             Hello Hello Hello
                         </CardText>
                         <CardActions border>
-                            <Button colored>GitHub</Button>
-                            <Button colored>Live Demo</Button>
+                            <Button colored><a href="https://github.com/minhluanlqd/RutgersMenu" target="_blank" rel="noopener noreferrer" >GitHub</a></Button>
+                            <Button colored><a href="https://minhluanlqd.github.io/RutgersMenu/"target="_blank" rel="noopener noreferrer">Live Demo</a></Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
                             <IconButton name="share"/>
