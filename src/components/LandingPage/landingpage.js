@@ -4,6 +4,7 @@ import avatar from '../../assets/images/MyAvatar.png';
 import {Icon} from '@iconify/react';
 import leetcodeIcon from '@iconify/icons-simple-icons/leetcode';
 import Typical from 'react-typical';
+import ParticlesBg from 'particles-bg';
 
 class LandingPage extends Component{
 
@@ -11,6 +12,7 @@ class LandingPage extends Component{
         return(
             <div style={{margin: 'auto', width: '100%'}}>
                 <Grid className="landing-grid">
+                <ParticlesBg type="circle" bg={true} />
                     <Cell col={12}>
                         <img src={avatar} alt="Avatar" className="avatar-img" style={{borderRadius: "100%"}}/>
                         <div className="banner-text"> 

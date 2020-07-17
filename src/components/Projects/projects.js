@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, Button, CardMenu, IconButton, CardText} from 'react-mdl';
 import Background from '../../assets/images/RutgersMenu.png';
+import ParticlesBg from 'particles-bg';
 
 class Projects extends Component{
 
@@ -16,7 +17,7 @@ class Projects extends Component{
             return(
                 <div className="projects-grid">
                     {/* Project 1 */}
-
+                    <ParticlesBg type="circle" bg={true} />
                     <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                         <CardTitle style={{color: 'black', height: '250px', background: `url(${Background}) center / cover`}}>
                             Rutgers Menu

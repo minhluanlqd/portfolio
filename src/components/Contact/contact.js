@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Grid, Cell, List, ListItem, ListItemContent} from 'react-mdl';
 import avatar from '../../assets/images/MyAvatar.png';
+import ParticlesBg from 'particles-bg';
 
 class Contact extends Component{
 
@@ -8,6 +9,7 @@ class Contact extends Component{
         return(
             <div className="contact-body">
                 <Grid className="contact-grid">
+                <ParticlesBg type="cobweb" bg={true} />
                     <Cell col={6}>
                         <h2>Luan Tran</h2>
                         <img src={avatar} alt="My avatar" className="avatar-img"/>

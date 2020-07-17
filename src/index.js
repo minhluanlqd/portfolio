@@ -6,9 +6,11 @@ import {BrowserRouter} from 'react-router-dom'
 import * as serviceWorker from './serviceWorker';
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
+import MouseParticles from 'react-mouse-particles';
 
 ReactDOM.render(
   <BrowserRouter basename="/portfolio">
+    <MouseParticles g={1} color="random" cull="col,image-wrapper"/>
     <App />
   </BrowserRouter>,
   document.getElementById('root')
