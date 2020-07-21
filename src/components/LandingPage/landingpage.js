@@ -41,9 +41,9 @@ class LandingPage extends Component{
                                 </a>
 
                             {/* LinkedIn */}
-                                <a href="https://leetcode.com/luan_tran/" rel="noopener noreferrer" target="_blank">
+                                {/* <a href="https://leetcode.com/luan_tran/" rel="noopener noreferrer" target="_blank">
                                     <Icon icon={leetcodeIcon} style={{color: 'white', fontSize: '5em', padding: '8px'}}/>
-                                </a>
+                                </a> */}
                             </div>
                         </div>
                     </Cell>
