@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import Main from '../components/main';
-import { Link } from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 import MouseParticles from 'react-mouse-particles';
 
 class App extends Component {
@@ -11,20 +11,20 @@ class App extends Component {
       <div className="demo-big-content">
         <MouseParticles g={1} color="random" cull="col,image-wrapper"/>
       <Layout>
-          <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">MyPortfolio</Link>} scroll>
+          <Header className="header-color" title={<NavLink style={{textDecoration: 'none', color: 'white'}} exact to="/">MyPortfolio</NavLink>} scroll>
               <Navigation>
-                  <Link to="/resume">Resume</Link>
-                  <Link to="/aboutme">About Me</Link>
-                  <Link to="/projects">Projects</Link>
-                  <Link to="/contact">Contact</Link>
+                  <NavLink activeStyle={{color: '#fa923f', textDecoration: 'bold'}} to="/resume">Resume</NavLink>
+                  <NavLink activeStyle={{color: '#fa923f', textDecoration: 'bold'}} to="/aboutme">About Me</NavLink>
+                  <NavLink activeStyle={{color: '#fa923f', textDecoration: 'bold'}} to="/projects">Projects</NavLink>
+                  <NavLink activeStyle={{color: '#fa923f', textDecoration: 'bold'}} to="/contact">Contact</NavLink>
               </Navigation>
           </Header>
-          <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">MyPortfolio</Link>}>
+          <Drawer title={<NavLink style={{textDecoration: 'none', color: 'black'}} exact to="/">MyPortfolio</NavLink>}>
               <Navigation>
-                <Link to="/resume">Resume</Link>
-                <Link to="/aboutme">About Me</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contact">Contact</Link>
+                <NavLink activeStyle={{color: '#fa923f', textDecoration: 'bold'}} to="/resume">Resume</NavLink>
+                <NavLink activeStyle={{color: '#fa923f', textDecoration: 'bold'}} to="/aboutme">About Me</NavLink>
+                <NavLink activeStyle={{color: '#fa923f', textDecoration: 'bold'}} to="/projects">Projects</NavLink>
+                <NavLink activeStyle={{color: '#fa923f', textDecoration: 'bold'}} to="/contact">Contact</NavLink>
               </Navigation>
           </Drawer>
           <Content>
